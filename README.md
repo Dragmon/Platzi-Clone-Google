@@ -1,2 +1,2 @@
-# Platzi-Clone-Google
+# Platzi-Clon-Google
 Clone del sitio de Google
