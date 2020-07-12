@@ -1,0 +1,220 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: content-box;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header{
+  width: 100%;
+  height: 60px;
+}
+
+header nav{
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav .navRightSection{
+  width: 250px;
+  height: auto;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .navRightSection a{
+  color: #000000;
+}
+nav .navRightSection .menuIcon{
+  background-image: url('https://static.thenounproject.com/png/756729-200.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+}
+nav .navRightSection img{
+  border-radius: 50%;
+}
+main{
+  min-height: calc(100vh - 112px);
+}
+.buscador {
+  padding: 150px 0 0;
+  text-align: center;
+}
+.buscador .buscadorLogo{
+  width: 350px;
+  margin: 0 auto 35px;
+}
+.buscador .buscadorLogo img{
+  height: 92px;
+  width: 272px;
+}
+.buscador .buscadorInput{
+  width: 530px;
+  margin: 0 auto 35px;
+}
+.buscador .buscadorInput__Container{
+  width: 525px;
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buscador .buscadorInput__Container:hover{
+  box-shadow: 0 1px 6px 0 #20212447;
+  border-color: #dfe1e500;
+}
+.buscador .buscadorInput input {
+  width: 450px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+.buscador .buscadorInput .searchIcon{
+  background-image: url('https://img.icons8.com/android/24/000000/search.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+.buscador .buscadorInput .microIcon{
+  background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.buscador .buscadorButtons{
+  width: 530px;
+  margin: 0 auto;
+}
+
+.buscador .buscadorButtons div{
+  display: inline;
+  margin: 0 5px;
+}
+
+.buscador .buscadorButtons button{
+  height: 36px;
+  background-color: #f2f2f2;
+  border: 0;
+  font-size: 14px;
+  color: #5f6368;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+.buscador .buscadorButtons button:hover{
+  border: 1px solid #c6c6c6;
+  background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+  background-color: #f8f8f8;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222222;
+}
+footer{
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  font-size: 13px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4ee;
+}
+footer ul{
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+footer .footerLeft{
+  justify-self: left;
+}
+footer .footerRight{
+  justify-self: right;
+}
+
+footer ul li a {
+  margin: 0 10px;
+  color: #5f6368;
+}
+
+@media screen and (max-width: 1023px){
+  main {
+    min-height: calc(100vh - 132px);
+  }
+  footer{
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+  footer .footerLeft,
+  footer .footerRight {
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 812px) 
+and (orientation:landscape){
+  main {
+    min-height: calc(100vh - 60px);
+  }
+  .buscador {
+    padding: 20px 0 0;
+  }
+  .buscador .buscadorLogo {
+    width: 150px;
+  }
+  .buscador .buscadorLogo img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  main {
+    min-height: calc(100vh - 126px);
+  }
+  .buscador {
+    padding: 50px 0 0;
+  }
+  .buscador .buscadorLogo {
+    width: 150px;
+  }
+  .buscador .buscadorLogo img {
+    height: auto;
+    width: 100%;
+  }
+  .buscador .buscadorInput {
+    width: 98%;
+  }
+  .buscador .buscadorInput input {
+    width: 85%;
+  }
+  .buscador .buscadorInput__Container {
+    width: inherit;
+  }
+  .buscador .buscadorButtons {
+    width: 100%;
+  }
+  footer{
+    font-size: 11px;
+  }
+  footer ul li a {
+    margin: 0 5px;
+  }
+}
