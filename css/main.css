@@ -168,23 +168,6 @@ footer ul li a {
   }
 }
 
-@media screen and (max-width: 812px) 
-and (orientation:landscape){
-  main {
-    min-height: calc(100vh - 60px);
-  }
-  .buscador {
-    padding: 20px 0 0;
-  }
-  .buscador .buscadorLogo {
-    width: 150px;
-  }
-  .buscador .buscadorLogo img {
-    height: auto;
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 767px){
   main {
     min-height: calc(100vh - 126px);
@@ -200,13 +183,13 @@ and (orientation:landscape){
     width: 100%;
   }
   .buscador .buscadorInput {
-    width: 98%;
+    width: 95%;
   }
   .buscador .buscadorInput input {
     width: 85%;
   }
   .buscador .buscadorInput__Container {
-    width: inherit;
+    width: 100%;
   }
   .buscador .buscadorButtons {
     width: 100%;
@@ -216,5 +199,22 @@ and (orientation:landscape){
   }
   footer ul li a {
     margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 812px) 
+and (orientation:landscape){
+  main {
+    min-height: calc(100vh - 60px);
+  }
+  .buscador {
+    padding: 20px 0 0;
+  }
+  .buscador .buscadorLogo {
+    width: 150px;
+  }
+  .buscador .buscadorLogo img {
+    height: auto;
+    width: 100%;
   }
 }
